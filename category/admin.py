@@ -1,4 +1,4 @@
-import imp
+import importlib
 from django.contrib import admin
 
 from .models import Category

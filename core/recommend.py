@@ -14,7 +14,7 @@ from ast import literal_eval
 
 
 #importing the scrapped dataset
-data = pd.read_csv(os.getcwd() + '\clean-dataset.csv')
+data = pd.read_csv(os.getcwd() + '/clean-dataset.csv')
 #dropping the columns that will not be used for the recommendation
 data.drop(labels=['Phone_Number', 'Addresss', 'Num_rating', 'Rating', 'Price', 'Website_URL', 'Latitudes', 'Longitudes', 'Image_URL',],axis=1,inplace=True)
 #creating a tag that will be used to create the natural language processing model
